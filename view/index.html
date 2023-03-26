@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <script src="../dist/bundle.js"></script>
+</head>
+
+<body>
+  <h2>Test</h2>
+  <div id="chart"></div>
+
+  <script type="module">
+    import * as x from "../dist/bundle.js";
+    console.log(Object.keys(x))
+    const animatedBarChart = new AnimatedBarChart("#chart");
+  </script>
+</body>
+
+</html>
